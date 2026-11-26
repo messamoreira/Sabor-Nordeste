@@ -55,6 +55,8 @@ O workflow em `.github/workflows/deploy.yml` publica o site após um push para `
 
 O caminho dos arquivos é ajustado automaticamente para repositórios de projeto e para sites pessoais ou organizacionais `*.github.io`.
 
+Se o site abrir em branco, confirme em **Settings → Pages → Build and deployment** que a origem está como **GitHub Actions**, não **Deploy from a branch**. A publicação pela branch serve o HTML fonte sem compilar React e TypeScript. Depois de alterar a origem, execute novamente **Deploy to GitHub Pages** na aba **Actions** (ou faça um novo push para `main`) e confirme que os jobs de build e deploy terminaram com sucesso.
+
 ## Arquivos principais
 
 - `src/App.tsx`: conteúdo, dados de exemplo e interações da página.
